@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Trivia Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container-fluid">
+    <header class="container-fluid text-center">
+      <H1>TRIVIA GAME</H1>
+    </header>
+  </div>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <h3>WELCOME</h3>
+      <p>
+        You have 10 questions in each round <br><br><p></p>
+        You have 20 seconds to answer each question
+      </p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h2>Question <span id="curQ">1</span> Of <span id="totQ">10</span></h2>
+      <p><h3>What is the color of sky?</h3></p>
+      <hr>
+      <p>
+          <input type='radio' name='choices' value='A'> Red <br>
+          <input type='radio' name='choices' value='B'> Blue <br>
+          <input type='radio' name='choices' value='C'> Green <br>
+          <input type='radio' name='choices' value='D'> White <br>
+
+      </p>
+      <div class="well">
+        <H4>Time Remaining <H3><span id="timeRemaining">10</span></H3> Seconds</H4>
+      </div>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>Correct Answers</p>
+        <p><span id="correct"></span>0</p>
+      </div>
+      <div class="well">
+        <p>Inconrrect Answers</p>
+        <p><span id="incorrect">0</span></p>
+      </div>
+      <div class="well">
+        <p>Unanswered Questions</p>
+        <p><span id="skippedQ">0</span></p>
+      </div>
+      <div class="well">
+        <p>Questions Remaining</p>
+        <p><span id="remainingQ">10</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>&copy; Jyotsna Kavirayani 2017</p>
+</footer>
+
+</body>
+</html>
